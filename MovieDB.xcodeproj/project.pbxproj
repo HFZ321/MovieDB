@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		F15A29FD26FE683500043351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A29FC26FE683500043351 /* AppDelegate.swift */; };
 		F15A29FF26FE683500043351 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A29FE26FE683500043351 /* SceneDelegate.swift */; };
-		F15A2A0126FE683500043351 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A2A0026FE683500043351 /* ViewController.swift */; };
+		F15A2A0126FE683500043351 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A2A0026FE683500043351 /* TableViewController.swift */; };
 		F15A2A0426FE683500043351 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15A2A0226FE683500043351 /* Main.storyboard */; };
 		F15A2A0626FE683700043351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15A2A0526FE683700043351 /* Assets.xcassets */; };
 		F15A2A0926FE683700043351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15A2A0726FE683700043351 /* LaunchScreen.storyboard */; };
 		F15A2A1426FE683700043351 /* MovieDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A2A1326FE683700043351 /* MovieDBTests.swift */; };
 		F15A2A1F26FE683700043351 /* MovieDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A2A1E26FE683700043351 /* MovieDBUITests.swift */; };
+		F15A2A3226FE696400043351 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A2A3126FE696400043351 /* TableViewCell.swift */; };
+		F15A2A3426FE6C7D00043351 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A2A3326FE6C7D00043351 /* MovieModel.swift */; };
+		F15A2A362702105300043351 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A2A352702105300043351 /* LoginController.swift */; };
+		F15A2A77270259EA00043351 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A2A76270259EA00043351 /* ApiManager.swift */; };
+		F15A2A7A27026B6900043351 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A2A7927026B6900043351 /* Constant.swift */; };
+		F15A2A7C2702C3D200043351 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A2A7B2702C3D200043351 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,7 @@
 		F15A29F926FE683500043351 /* MovieDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15A29FC26FE683500043351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F15A29FE26FE683500043351 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F15A2A0026FE683500043351 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F15A2A0026FE683500043351 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F15A2A0326FE683500043351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F15A2A0526FE683700043351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F15A2A0826FE683700043351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		F15A2A1A26FE683700043351 /* MovieDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15A2A1E26FE683700043351 /* MovieDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBUITests.swift; sourceTree = "<group>"; };
 		F15A2A2026FE683700043351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15A2A3126FE696400043351 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F15A2A3326FE6C7D00043351 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		F15A2A352702105300043351 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F15A2A76270259EA00043351 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		F15A2A7927026B6900043351 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F15A2A7B2702C3D200043351 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +113,13 @@
 			children = (
 				F15A29FC26FE683500043351 /* AppDelegate.swift */,
 				F15A29FE26FE683500043351 /* SceneDelegate.swift */,
-				F15A2A0026FE683500043351 /* ViewController.swift */,
-				F15A2A0226FE683500043351 /* Main.storyboard */,
 				F15A2A0526FE683700043351 /* Assets.xcassets */,
-				F15A2A0726FE683700043351 /* LaunchScreen.storyboard */,
 				F15A2A0A26FE683700043351 /* Info.plist */,
+				F15A2AF92704B7EF00043351 /* ApiManager */,
+				F15A2A7827026B4C00043351 /* Constant */,
+				F15A2A2C26FE684300043351 /* Model */,
+				F15A2A2D26FE684A00043351 /* View */,
+				F15A2A2E26FE685300043351 /* Controller */,
 			);
 			path = MovieDB;
 			sourceTree = "<group>";
@@ -126,6 +140,82 @@
 				F15A2A2026FE683700043351 /* Info.plist */,
 			);
 			path = MovieDBUITests;
+			sourceTree = "<group>";
+		};
+		F15A2A2C26FE684300043351 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F15A2A3326FE6C7D00043351 /* MovieModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F15A2A2D26FE684A00043351 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F15A2A3026FE68F800043351 /* Custom */,
+				F15A2A2F26FE68EB00043351 /* StoryBoard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F15A2A2E26FE685300043351 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F15A2AFB2704F83400043351 /* Login */,
+				F15A2AFA2704F82400043351 /* TableView */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F15A2A2F26FE68EB00043351 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F15A2A0226FE683500043351 /* Main.storyboard */,
+				F15A2A0726FE683700043351 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		F15A2A3026FE68F800043351 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F15A2A3126FE696400043351 /* TableViewCell.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		F15A2A7827026B4C00043351 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				F15A2A7927026B6900043351 /* Constant.swift */,
+				F15A2A7B2702C3D200043351 /* Extension.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		F15A2AF92704B7EF00043351 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				F15A2A76270259EA00043351 /* ApiManager.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		F15A2AFA2704F82400043351 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				F15A2A0026FE683500043351 /* TableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		F15A2AFB2704F83400043351 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F15A2A352702105300043351 /* LoginController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +348,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F15A2A0126FE683500043351 /* ViewController.swift in Sources */,
+				F15A2A7C2702C3D200043351 /* Extension.swift in Sources */,
+				F15A2A0126FE683500043351 /* TableViewController.swift in Sources */,
+				F15A2A362702105300043351 /* LoginController.swift in Sources */,
+				F15A2A3226FE696400043351 /* TableViewCell.swift in Sources */,
+				F15A2A7A27026B6900043351 /* Constant.swift in Sources */,
+				F15A2A77270259EA00043351 /* ApiManager.swift in Sources */,
+				F15A2A3426FE6C7D00043351 /* MovieModel.swift in Sources */,
 				F15A29FD26FE683500043351 /* AppDelegate.swift in Sources */,
 				F15A29FF26FE683500043351 /* SceneDelegate.swift in Sources */,
 			);
@@ -437,12 +533,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2556RQXY25;
 				INFOPLIST_FILE = MovieDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hongfei.MovieDB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hongfei.iOS.MovieDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,12 +552,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2556RQXY25;
 				INFOPLIST_FILE = MovieDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hongfei.MovieDB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hongfei.iOS.MovieDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
