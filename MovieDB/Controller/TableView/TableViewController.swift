@@ -8,25 +8,14 @@
 import UIKit
 
 class TableViewController: UIViewController{
-        
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     var objMovieList: MovieList?
-    let searchController = UISearchController(searchResultsController: nil)
     var filterMovie: [Movie] = []
-    var isSearchBarEmpty: Bool {
-      return searchController.searchBar.text?.isEmpty ?? true
-    }
-    var isSearching: Bool {
-      return searchController.isActive && !isSearchBarEmpty
-    }
+    var isSearch = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search"
-        navigationItem.searchController = searchController
-        definesPresentationContext = true
+        searchBar.delegate = self
         tableView.dataSource = self
         tableView.delegate = self
         let apiManger = ApiManager.shared
@@ -46,7 +35,7 @@ class TableViewController: UIViewController{
 extension TableViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var num = objMovieList?.results.count ?? 0
-        if isSearching{
+        if isSearch{
             num = filterMovie.count
         }
         return num
@@ -56,13 +45,26 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? TableViewCell
         
         var movie = objMovieList?.results[indexPath.row]
-        if isSearching{
+        if isSearch{
             movie = filterMovie[indexPath.row]
         }
         if let movie = movie{
             cell?.setInfo(movie: movie)
         }
         return cell ?? UITableViewCell()
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let st = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = st.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
+        if let vc = vc{
+            if isSearch{
+                vc.setInfo(movie: filterMovie[indexPath.row])
+            }else{
+                vc.setInfo(movie: objMovieList?.results[indexPath.row] ?? Movie())
+            }
+            
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 extension TableViewController: passData{
@@ -73,11 +75,17 @@ extension TableViewController: passData{
         }
 }
 }
-extension TableViewController: UISearchResultsUpdating{
-    func updateSearchResults(for searchController: UISearchController) {
-        filterItem(searchController.searchBar.text ?? "")
+extension TableViewController: UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        isSearch = true
+        if searchText == ""{
+            isSearch = false
+        }
+        filterItem(searchText)
     }
-    
-    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        isSearch = false
+        searchBar.resignFirstResponder()
+    }
 }
 

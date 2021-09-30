@@ -21,6 +21,7 @@
 		F15A2A77270259EA00043351 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A2A76270259EA00043351 /* ApiManager.swift */; };
 		F15A2A7A27026B6900043351 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A2A7927026B6900043351 /* Constant.swift */; };
 		F15A2A7C2702C3D200043351 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A2A7B2702C3D200043351 /* Extension.swift */; };
+		F15A2AFF2706061600043351 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A2AFE2706061600043351 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		F15A2A76270259EA00043351 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		F15A2A7927026B6900043351 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F15A2A7B2702C3D200043351 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		F15A2AFE2706061600043351 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			children = (
 				F15A2AFB2704F83400043351 /* Login */,
 				F15A2AFA2704F82400043351 /* TableView */,
+				F15A2B002706061B00043351 /* Detail */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +219,14 @@
 				F15A2A352702105300043351 /* LoginController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		F15A2B002706061B00043351 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F15A2AFE2706061600043351 /* DetailViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +366,7 @@
 				F15A2A7A27026B6900043351 /* Constant.swift in Sources */,
 				F15A2A77270259EA00043351 /* ApiManager.swift in Sources */,
 				F15A2A3426FE6C7D00043351 /* MovieModel.swift in Sources */,
+				F15A2AFF2706061600043351 /* DetailViewController.swift in Sources */,
 				F15A29FD26FE683500043351 /* AppDelegate.swift in Sources */,
 				F15A29FF26FE683500043351 /* SceneDelegate.swift in Sources */,
 			);
