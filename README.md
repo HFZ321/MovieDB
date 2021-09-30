@@ -11,4 +11,4 @@ The app requires 6 or more digit email and 6 or more password to login to the mo
 When the cell on the table is pressed, the screen will jump to the detail screen.
 
 
-<img src="https://i.postimg.cc/G2bjTs00/Simulator-Screen-Shot-i-Phone-11-2021-09-30-at-11-48-25.png" width="375" height="667">
+<img src="https://i.postimg.cc/G2bjTs00/Simulator-Screen-Shot-i-Phone-11-2021-09-30-at-11-48-25.png" width="300" height="600">
